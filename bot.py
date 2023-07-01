@@ -25,7 +25,7 @@ while True:
         keystroke = row['Keystroke']
         image_url = row['Image']
 
-        image_path = '/home/ubuntu/temp_image.jpg'
+        image_path = '/opt/machotkey/images/temp_image.jpg'
         response = requests.get(image_url, stream=True)
         if response.status_code == 200:
             with open(image_path, 'wb') as f:
