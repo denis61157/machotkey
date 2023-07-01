@@ -15,7 +15,7 @@ def send_telegram_message(message, image_path):
         bot.send_photo(chat_id=CHAT_ID, photo=photo, caption=message, parse_mode='Markdown')
 
 
-df = pd.read_csv('data_for_HotKey_new.csv', delimiter=';')
+df = pd.read_csv('data.csv', delimiter=';')
 while True:
     for index, row in df.iterrows():
         print(row['Action'])
